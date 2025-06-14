@@ -11,7 +11,7 @@ Este repositório contém meu portfólio pessoal, foi desenvolvido com **React +
 
 ---
 
-##  Tecnologias
+## Tecnologias
 
 - [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/) (estilização utilitária)
@@ -22,7 +22,7 @@ Este repositório contém meu portfólio pessoal, foi desenvolvido com **React +
 
 ---
 
-##  Design e UX
+## Design e UX
 
 - Paleta de cores **escura**, com foco em contraste, legibilidade e simplicidade
 - Layout limpo, direto e responsivo
@@ -31,7 +31,7 @@ Este repositório contém meu portfólio pessoal, foi desenvolvido com **React +
 
 ---
 
-## 󰉖 Estutura de pastas do projeto
+## Estutura de pastas do projeto
 
 ```bash
 ╭─────────────────────────────────────────────╮
@@ -57,7 +57,7 @@ Este repositório contém meu portfólio pessoal, foi desenvolvido com **React +
 
 ---
 
-##  Executando localmente
+## Executando localmente
 
 ```bash
 # Clone o repositório
@@ -77,7 +77,7 @@ npm run dev
 
 ---
 
-##  Scripts disponíveis
+## Scripts disponíveis
 
 ```bash
 npm run dev — Inicia o ambiente de desenvolvimento
@@ -88,7 +88,7 @@ npm run lint — Analisa o código
 
 ---
 
-## 󰄪 SEO
+## SEO
 
 - Metatags configuradas para mecanismos de busca
 - Otimização de título, descrição e Open Graph para redes sociais
@@ -96,14 +96,14 @@ npm run lint — Analisa o código
 
 ---
 
-## 󰧮 Licença
+## Licença
 Este projeto está licenciado sob os termos da MIT License.
 
 ---
 
-##  Contato
-- ![LinkedIn](https://linkedin.com/in/felipeC20312)
-- ![GitHub](https://github.com/felipeC20312)
+## Contato
+- [LinkedIn](https://linkedin.com/in/felipeC20312)
+- [GitHub](https://github.com/felipeC20312)
 - Email: felipecaeatnodev@gmail.com
 
 Desenvolvido por **Felipe C.**
