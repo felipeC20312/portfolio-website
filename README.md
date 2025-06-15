@@ -1,109 +1,54 @@
-# Portfólio Web — Felipe C.
+# React + TypeScript + Vite
 
-Este repositório contém meu portfólio pessoal, foi desenvolvido com **React + TypeScript**, utilizando **Tailwind CSS**, empacotado com **Vite**, com foco em performance, animações suaves, responsividade e SEO otimizado para minha atuação como **Desenvolvedor Web Pleno**.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-![React](https://img.shields.io/badge/React-18-blue)
-![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-Utility--First-38BDF8)
-![Framer Motion](https://img.shields.io/badge/Framer--Motion-Animations-black)
-![Vite](https://img.shields.io/badge/Vite-Fast%20Build-646CFF)
-![License](https://img.shields.io/badge/license-MIT-green)
+Currently, two official plugins are available:
 
----
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Tecnologias
+## Expanding the ESLint configuration
 
-- [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/) (estilização utilitária)
-- [Framer Motion](https://www.framer.com/motion/) (animações suaves)
-- [Vite](https://vitejs.dev/) (empacotador e builder)
-- Deploy via [Vercel](https://vercel.com/) ou [Netlify](https://www.netlify.com/)
-- SEO otimizado com React Helmet
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
----
-
-## Design e UX
-
-- Paleta de cores **escura**, com foco em contraste, legibilidade e simplicidade
-- Layout limpo, direto e responsivo
-- Animações sutis utilizando **Framer Motion**
-- Formulário de contato funcional com envio via email
-
----
-
-## Estutura de pastas do projeto
-
-```bash
-╭─────────────────────────────────────────────╮
-│   portfolio/                               │
-│ ├──   public/                              │
-│ │   └──   assets estáticos (favicon, imgs) │
-│ ├──   src/                                 │
-│ │   ├──   assets/                          │
-│ │   ├──   components/                      │
-│ │   ├──   hooks/                           │
-│ │   ├──   types/                           │
-│ │   ├──   App.tsx                          │
-│ │   ├── 󰡖  main.tsx                         │
-│ │   ├──   routes.tsx                       │
-│ │   └──   index.css                        │
-│ ├──   .eslintrc.cjs                        │
-│ ├──   tailwind.config.cjs                  │
-│ ├──   tsconfig.json                        │
-│ ├──   vite.config.ts                       │
-│ └──   README.md                            │
-╰─────────────────────────────────────────────╯
+```js
+export default tseslint.config({
+  extends: [
+    // Remove ...tseslint.configs.recommended and replace with this
+    ...tseslint.configs.recommendedTypeChecked,
+    // Alternatively, use this for stricter rules
+    ...tseslint.configs.strictTypeChecked,
+    // Optionally, add this for stylistic rules
+    ...tseslint.configs.stylisticTypeChecked,
+  ],
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
 ```
 
----
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-## Executando localmente
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-```bash
-# Clone o repositório
-git clone https://github.com/felipec20312/portfolio.git
-
-# Acesse o diretório
-cd portfolio
-
-# Instale as dependências
-npm install
-
-# Execute o ambiente de desenvolvimento
-npm run dev
-
-# Acesse em http://localhost:5173
+export default tseslint.config({
+  plugins: {
+    // Add the react-x and react-dom plugins
+    'react-x': reactX,
+    'react-dom': reactDom,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended typescript rules
+    ...reactX.configs['recommended-typescript'].rules,
+    ...reactDom.configs.recommended.rules,
+  },
+})
 ```
-
----
-
-## Scripts disponíveis
-
-```bash
-npm run dev — Inicia o ambiente de desenvolvimento
-npm run build — Gera a build de produção
-npm run preview — Visualiza a build localmente
-npm run lint — Analisa o código
-```
-
----
-
-## SEO
-
-- Metatags configuradas para mecanismos de busca
-- Otimização de título, descrição e Open Graph para redes sociais
-- Foco em performance e acessibilidade (Lighthouse Score)
-
----
-
-## Licença
-Este projeto está licenciado sob os termos da MIT License.
-
----
-
-## Contato
-- [LinkedIn](https://linkedin.com/in/felipeC20312)
-- [GitHub](https://github.com/felipeC20312)
-- Email: felipecaeatnodev@gmail.com
-
-Desenvolvido por **Felipe C.**
