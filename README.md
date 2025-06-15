@@ -1,6 +1,6 @@
 # Portfólio Web — Felipe C.Add commentMore actions
 
-Este repositório contém meu portfólio pessoal, foi desenvolvido com **React + TypeScript**, utilizando **Tailwind CSS**, empacotado com **Vite**, com foco em performance, animações suaves, responsividade e SEO otimizado para minha atuação como **Desenvolvedor Web Pleno**.
+Este repositório contém meu portfólio pessoal, para esse projeto utilizei uma das minhas stacks favoritas com **React + TypeScript**, utilizando **Tailwind CSS**, empacotado com **Vite**, com foco em performance, animações suaves, responsividade e SEO otimizado para minha atuação como **Desenvolvedor Web Pleno**.
 
 ![React](https://img.shields.io/badge/React-18-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6)
